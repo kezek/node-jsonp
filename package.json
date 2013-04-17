@@ -1,0 +1,16 @@
+{
+  "author": "Andrei <kezek.ma@gmail.com>",
+  "name": "node-jsonp",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {
+    "connect" : "*",
+    },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(function() {
+				function loadContent(){
+					var url = 'http://localhost:8181/?callback=?';
+		  			$.getJSON(url, function(json){
+		    			console.log(json);
+		    			$('h3').html(JSON.stringify(json, null, 2));
+		  			});	
+				}
+
+				$(document).ready(function(){
+					setTimeout(loadContent, 3001);
+				});
+				
+				$('button').on('click',function(){
+					loadContent();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h3>Best site eva ! This content will change in like 3 seconds by using JSONP & jQuery</h3>
+		<button>Generate!</button>
+	</body>
+</html>
